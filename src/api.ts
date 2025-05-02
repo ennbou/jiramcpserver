@@ -1,13 +1,8 @@
 import axios from "axios";
-import dotenv from "dotenv"
-dotenv.config();
+import env from "./env.js";
 
-const JIRA_BASE_URL = `https://${process.env.JIRA_BASE_URL}`;
-const JIRA_AUTH_TOKEN = `Bearer ${process.env.JIRA_AUTH_TOKEN}`;
-
-if (!process.env.JIRA_BASE_URL || !process.env.JIRA_AUTH_TOKEN) {
-  throw new Error("JIRA_BASE_URL or JIRA_AUTH_TOKEN is not defined in the environment variables.");
-}
+const JIRA_BASE_URL = `https://${env.JIRA_HOSTNAME}`;
+const JIRA_AUTH_TOKEN = `Bearer ${env.JIRA_AUTH_TOKEN}`;
 
 console.log("JIRA_BASE_URL:", JIRA_BASE_URL);
 console.log("JIRA_AUTH_TOKEN:", JIRA_AUTH_TOKEN);
