@@ -4,10 +4,6 @@ import env from "./env.js";
 const JIRA_BASE_URL = `https://${env.JIRA_HOSTNAME}`;
 const JIRA_AUTH_TOKEN = `Bearer ${env.JIRA_AUTH_TOKEN}`;
 
-console.log("JIRA_BASE_URL:", JIRA_BASE_URL);
-console.log("JIRA_AUTH_TOKEN:", JIRA_AUTH_TOKEN);
-
-
 const API_URL = `${JIRA_BASE_URL}/rest/api/2`;
 const AGILE_URL = `${JIRA_BASE_URL}/rest/agile/1.0`;
 const headers = {

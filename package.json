@@ -1,6 +1,6 @@
 {
   "name": "jiramcpserver",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "type": "module",
   "bin": {
@@ -12,12 +12,13 @@
   "scripts": {
     "start": "node ./build/index.js",
     "inspector": "npx @modelcontextprotocol/inspector node -r dotenv/config build/index.js",
-    "build": "tsc && chmod 755 build/index.js"
+    "build": "tsc && chmod 755 build/index.js",
+    "postinstall": "cp ./pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit"
   },
   "keywords": [],
   "author": "ennbou",
   "license": "ISC",
-  "description": "jira mco server",
+  "description": "MCP server tools to fetch data from JIRA Server",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.2",
     "axios": "^1.9.0",
