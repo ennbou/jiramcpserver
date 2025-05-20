@@ -242,7 +242,7 @@ server.tool("get-jira-sprints-in-board", "fetch jira sprints in board",{boardId:
 async function main() {
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.error("Weather MCP Server running on stdio");
+    console.error("Jira MCP Server running on stdio");
   }
   
   main().catch((error) => {
