@@ -1,12 +1,28 @@
 # JIRA MCP Server
 
-This repository contains a MCP (Model Context Protocol) server for JIRA integration.
+The JIRA MCP Server is designed to simplify the integration of JIRA with Model Context Protocol.
 
 ## Overview
 
-The JIRA MCP Server is a utility that bridges JIRA project management tools with Model Context Protocol capabilities, allowing for enhanced context awareness in development workflows.
+The JIRA MCP Server is a utility that bridges JIRA project management tools with Model Context Protocol capabilities, allowing for enhanced context awareness in development workflows. It provides a set of tools to interact with JIRA data programmatically, enabling developers to fetch and manage JIRA resources efficiently.
 
-Since it's under testing, it's read-only and doesn't support other HTTP actions (like: PUT, POST, DELETE).
+### Available MCP Tools
+
+The following tools are available in the JIRA MCP Server:
+
+- **get-jira-issue-details-by-key**: Fetch JIRA issue details by key.
+- **get-jira-users-in-project**: Fetch JIRA users in a project.
+- **get-jira-issues-by-jql**: Fetch JIRA issues using JQL.
+- **get-jira-components-in-project**: Fetch JIRA components in a project.
+- **get-jira-status-in-project**: Fetch JIRA status in a project.
+- **get-jira-priorities**: Fetch JIRA priorities.
+- **get-jira-projects**: Fetch JIRA projects.
+- **get-jira-boards-using-project-id-or-project-key**: Fetch JIRA boards in a project by ID or key.
+- **get-jira-boards-using-board-name**: Fetch JIRA boards by name.
+- **get-jira-issue-types-in-project**: Fetch JIRA issue types in a project.
+- **get-jira-sprints-in-board**: Fetch JIRA sprints in a board.
+
+> Since it's under testing, it's read-only and doesn't support other HTTP actions (like: PUT, POST, DELETE).
 
 ## Prerequisites
 
