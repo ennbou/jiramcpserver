@@ -123,6 +123,6 @@ or try to open VS Code settings JSON and add `envFile` to the `mcp.servers.jiram
   }
 ```
 
-## Author
+## License
 
-ennbou
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
